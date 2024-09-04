@@ -8,7 +8,7 @@ class Menu(models.Model):
     Inventory = models.IntegerField(validators=[MinValueValidator(0)])
 
     def get_item(self):
-        return f'{self.Title}:{str(self.Price)}'
+        return f'{self.Title} : {str(self.Price)}'
 
 class Booking(models.Model):
     Name = models.CharField(max_length=255)
